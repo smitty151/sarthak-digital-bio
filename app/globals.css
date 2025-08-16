@@ -1,0 +1,22 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root{
+  --accent:#ea580c;
+  --bg:#0b0b0e;
+  --card:#111114;
+  --ink:#e8e8ea;
+  --muted:#a3a3ad;
+}
+
+body{ background:var(--bg); color:var(--ink); }
+.container{ max-width:1000px; margin:0 auto; padding:1.25rem; }
+.card{ background:var(--card); border:1px solid rgba(255,255,255,.06); border-radius:16px; padding:1.25rem; }
+.section-title{ display:flex; align-items:center; gap:.5rem; font-weight:700; }
+.kv{ display:grid; grid-template-columns: 1fr 2fr; gap:.5rem 1rem; }
+.list{ list-style:disc; padding-left:1.25rem; }
+.nav a{ color:var(--muted); }
+.nav a:hover{ color:var(--accent); }
+.btn{ display:inline-flex; align-items:center; gap:.5rem; border:1px solid rgba(255,255,255,.08); border-radius:.75rem; padding:.5rem .9rem; }
+.btn:hover{ border-color:rgba(255,255,255,.18); }
